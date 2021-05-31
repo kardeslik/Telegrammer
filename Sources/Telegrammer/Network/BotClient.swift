@@ -19,7 +19,7 @@ public class BotClient {
 
     /// Default init for BotClient (HTTP client), all parameters except `proxy` are oblibatory
     /// - Parameters:
-    ///   - host: Host for requests (without scheme)
+    ///   - host: Host for requests (with scheme)
     ///   - port: Port for requests
     ///   - token: Bot auth token
     ///   - worker: Worker on which will be performed request
@@ -83,7 +83,7 @@ public class BotClient {
     }
 
     func apiUrl(endpoint: String) -> String {
-        return "https://\(host):\(port)/bot\(token)/\(endpoint)"
+        return "\(host):\(port)/bot\(token)/\(endpoint)"
     }
 }
 

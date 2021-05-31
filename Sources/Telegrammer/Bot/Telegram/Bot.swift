@@ -22,7 +22,7 @@ public final class Bot: BotProtocol {
     public struct Settings {
         public let token: String
         public let debugMode: Bool
-        public var serverHost: String = "api.telegram.org"
+        public var serverHost: String = "https://api.telegram.org"
         public var serverPort: Int = 443
         public var webhooksConfig: Webhooks.Config?
         public var proxy: Bot.Settings.Proxy?
